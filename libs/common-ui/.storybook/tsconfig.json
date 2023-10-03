@@ -8,8 +8,9 @@
     "../src/**/*.stories.ts",
     "../src/**/*.stories.js",
     "../src/**/*.stories.jsx",
-    "../src/**/*.stories.tsx",
+    "../src/**/*.stories.ts",
     "../src/**/*.stories.mdx",
+    "../src/**/*.component.ts",
     "*.js",
     "*.ts"
   ]
