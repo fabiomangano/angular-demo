@@ -1,0 +1,234 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$app-action-primary: (
+  50: #f2f4fe,
+  100: #f2f4fe,
+  200: #cbd2fa,
+  300: #a5b1f5,
+  400: #6276eb,
+  500: #2d47dc,
+  600: #0925c8,
+  700: #0019ac,
+  800: #001489,
+  900: #00106c,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-action-secondary: (
+  50: #f2f2f2,
+  100: #f2f2f2,
+  200: #ededf0,
+  300: #e8e9ed,
+  400: #dadbe3,
+  500: #c7c9d3,
+  600: #afb1bc,
+  700: #8f919c,
+  800: #676871,
+  900: #37383d,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-accent-success: (
+  50: #f2f2f2,
+  100: #e6f2e9,
+  200: #c8f2d4,
+  300: #aaf2bf,
+  400: #6fee93,
+  500: #3fe66e,
+  600: #1cda51,
+  700: #0ac83f,
+  800: #06ac34,
+  900: #028a28,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-accent-info: (
+  50: #f2f2f2,
+  100: #dbf4ff,
+  200: #bceafe,
+  300: #9fe0fc,
+  400: #65cbf6,
+  500: #36b6ed,
+  600: #15a2de,
+  700: #048ec9,
+  800: #037aac,
+  900: #01618a,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-accent-danger: (
+  50: #f2f2f2,
+  100: #ffdee0,
+  200: #ffc1c6,
+  300: #ffa5ab,
+  400: #ff6a73,
+  500: #f93945,
+  600: #ed1623,
+  700: #d40411,
+  800: #b4020e,
+  900: #8e010a,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-accent-warning: (
+  50: #f2f2f2,
+  100: #fff3de,
+  200: #ffe9be,
+  300: #ffdf9e,
+  400: #ffc861,
+  500: #f9b22d,
+  600: #ed9d08,
+  700: #d48a00,
+  800: #b47500,
+  900: #8e5c00,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-text-neutral: (
+  50: #ffffff,
+  100: #b5b7bf,
+  200: #ffe9be,
+  300: #818288,
+  400: #595a5e,
+  500: #0a0a0a,
+  600: #0a0a0a,
+  700: #0a0a0a,
+  800: #0a0a0a,
+  900: #0a0a0a,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-surface-light: (
+  50: #ffffff,
+  100: #b5b7bf,
+  200: #f8f9fb,
+  300: #edeff5,
+  400: #e0e1eb,
+  500: #d5d6e0,
+  600: #d5d6e0,
+  700: #d5d6e0,
+  800: #d5d6e0,
+  900: #d5d6e0,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-palette-primary: mat.define-palette($app-action-primary);
+$app-palette-secondary: mat.define-palette($app-action-secondary);
+$app-palette-success: mat.define-palette($app-accent-success);
+$app-palette-info: mat.define-palette($app-accent-info);
+$app-palette-danger: mat.define-palette($app-accent-danger);
+$app-palette-warning: mat.define-palette($app-accent-warning);
+$app-palette-neutral: mat.define-palette($app-text-neutral);
+$app-palette-light: mat.define-palette($app-surface-light);
+
+$app-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $app-palette-primary,
+      accent: $app-palette-secondary,
+      warn: $app-palette-warning,
+      secondary: $app-palette-secondary,
+      success: $app-palette-success,
+      info: $app-palette-info,
+      danger: $app-palette-danger,
+      warning: $app-palette-warning,
+      neutral: $app-palette-neutral,
+      surface: $app-palette-light,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+  )
+);
+
+@include mat.core-theme($app-theme);
+@include mat.all-component-themes($app-theme);
