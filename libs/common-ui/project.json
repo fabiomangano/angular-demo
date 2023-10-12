@@ -36,7 +36,9 @@
         "port": 4400,
         "configDir": "libs/common-ui/.storybook",
         "browserTarget": "common-ui:build-storybook",
-        "compodoc": false
+        "compodoc": false,
+        "compodocArgs": ["-e", "json", "-d", "apps/web"],
+        "styles": ["libs/common-ui/theme.scss"]
       },
       "configurations": {
         "ci": {
@@ -51,7 +53,9 @@
         "outputDir": "dist/storybook/common-ui",
         "configDir": "libs/common-ui/.storybook",
         "browserTarget": "common-ui:build-storybook",
-        "compodoc": false
+        "compodoc": false,
+        "compodocArgs": ["-e", "json", "-d", "apps/web"],
+        "styles": ["libs/common-ui/theme.scss"]
       },
       "configurations": {
         "ci": {
