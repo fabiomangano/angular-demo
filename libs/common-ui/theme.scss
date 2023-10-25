@@ -8,7 +8,7 @@ $app-action-primary: (
   200: #cbd2fa,
   300: #a5b1f5,
   400: #6276eb,
-  500: #2d47dc,
+  500: #001489,
   600: #0925c8,
   700: #0019ac,
   800: #001489,
@@ -230,5 +230,13 @@ $app-theme: mat.define-light-theme(
   )
 );
 
+/**
+  all-component-colors,
+  all-component-typographies,
+  all-component-densities,
+  and all-component-themes
+*/
+
 @include mat.core-theme($app-theme);
-@include mat.all-component-themes($app-theme);
+@include mat.button-theme($app-theme);
+//@include mat.all-component-themes($app-theme);
